@@ -41,6 +41,6 @@ Remove the Niri include, remove the four Penrose files, and restore any settings
 
 ## AI assistance and license
 
-This rice was created primarily with AI assistance. The author estimates that about 3% was written by hand.
+This rice was created primarily with AI assistance. An estimated 3% was written by hand.
 
 The published code and configuration are available under the [MIT License](LICENSE). See [credits](CREDITS.md) for attribution.
