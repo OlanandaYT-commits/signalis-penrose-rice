@@ -1,0 +1,57 @@
+workspace "Code"
+workspace "Web"
+workspace "Chat"
+workspace "Files"
+
+layout {
+    gaps 10
+    default-column-width { proportion 0.5; }
+    preset-column-widths {
+        proportion 0.5
+        proportion 0.6666667
+        proportion 1.0
+    }
+    focus-ring {
+        width 2
+        active-color "#df6056"
+        inactive-color "#3b4741"
+    }
+}
+
+window-rule {
+    geometry-corner-radius 2
+    clip-to-geometry true
+}
+
+binds {
+    Mod+Space repeat=false hotkey-overlay-title="Applications" { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
+    Mod+Tab repeat=false hotkey-overlay-title="Overview" { toggle-overview; }
+    Mod+Return repeat=false hotkey-overlay-title="Terminal" { spawn "kitty"; }
+    Mod+B repeat=false hotkey-overlay-title="Browser" { spawn "gtk-launch" "brave-browser"; }
+    Mod+E repeat=false hotkey-overlay-title="Files" { spawn "dolphin"; }
+    Mod+V repeat=false hotkey-overlay-title="Clipboard" { spawn "noctalia" "msg" "panel-toggle" "clipboard"; }
+    Mod+Alt+L repeat=false allow-inhibiting=false hotkey-overlay-title="Lock screen" { spawn "noctalia" "msg" "session" "lock"; }
+    Mod+Shift+Slash repeat=false hotkey-overlay-title="Keyboard shortcuts" { show-hotkey-overlay; }
+    Mod+1 { focus-workspace "Code"; }
+    Mod+2 { focus-workspace "Web"; }
+    Mod+3 { focus-workspace "Chat"; }
+    Mod+4 { focus-workspace "Files"; }
+    Mod+Ctrl+1 { move-column-to-workspace "Code"; }
+    Mod+Ctrl+2 { move-column-to-workspace "Web"; }
+    Mod+Ctrl+3 { move-column-to-workspace "Chat"; }
+    Mod+Ctrl+4 { move-column-to-workspace "Files"; }
+    Mod+H { focus-column-left; }
+    Mod+L { focus-column-right; }
+    Mod+J { focus-window-down; }
+    Mod+K { focus-window-up; }
+    Mod+Left { focus-column-left; }
+    Mod+Right { focus-column-right; }
+    Mod+Up { focus-workspace-up; }
+    Mod+Down { focus-workspace-down; }
+    Mod+Shift+H { move-column-left; }
+    Mod+Shift+L { move-column-right; }
+    Mod+R { switch-preset-column-width; }
+    Mod+F { fullscreen-window; }
+    Mod+T { toggle-window-floating; }
+    Mod+Q repeat=false { close-window; }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "signalis-penrose",
+  "publisher": "local",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "SIGNALIS — Penrose",
+        "uiTheme": "vs-dark",
+        "path": "./themes/penrose.json"
+      }
+    ]
+  }
+}

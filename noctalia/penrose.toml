@@ -1,0 +1,56 @@
+[theme]
+mode = "dark"
+source = "custom"
+custom_palette = "Penrose"
+
+[theme.templates]
+builtin_ids = ["gtk4", "gtk3", "kitty", "btop", "kcolorscheme"]
+
+[shell]
+telemetry_enabled = false
+font_family = "IBM Plex Sans"
+corner_radius_scale = 0.22
+
+[shell.launcher]
+layout = "full"
+search_position = "top"
+default_view = "pinned"
+pinned = ["brave-browser", "kitty", "vscodium", "org.kde.dolphin"]
+show_session_button = false
+compact = true
+width = 630
+
+[bar.default]
+position = "top"
+thickness = 32
+radius = 0
+padding = 11
+widget_spacing = 7
+background_opacity = 1.0
+start = ["launcher", "workspaces"]
+center = ["clock"]
+end = ["keyboard_layout", "network", "bluetooth", "volume", "battery", "notifications", "control-center"]
+
+[widget.workspaces]
+style = "minimal"
+label_source = "name"
+max_label_chars = 8
+focused_color = "primary"
+show_labels = true
+
+[widget.network]
+show_label = false
+
+[widget.clock]
+font_family = "IBM Plex Mono"
+format = "{:%H:%M}"
+
+[dock]
+enabled = false
+
+[lockscreen]
+enabled = true
+blurred_desktop = false
+
+[lockscreen_widgets]
+enabled = false
