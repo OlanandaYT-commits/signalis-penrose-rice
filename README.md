@@ -2,6 +2,8 @@
 
 **English** · [Русский](README.ru.md)
 
+Looking for the orange-and-cyan setup? See the [SIGNALIS port for Hyprland](https://github.com/OlanandaYT-commits/i3-signalis/tree/hyprland/port).
+
 An unofficial SIGNALIS-inspired desktop theme for Niri and Noctalia. Penrose pairs a dark green palette with red focus accents, a compact top bar, and four named workspaces.
 
 ![English profile with the Penrose launcher](docs/desktop-en.png)

@@ -2,6 +2,8 @@
 
 [English](README.md) · **Русский**
 
+Оранжево-голубое оформление доступно отдельно в [порте SIGNALIS для Hyprland](https://github.com/OlanandaYT-commits/i3-signalis/tree/hyprland/port#readme). [Инструкция на русском](https://github.com/OlanandaYT-commits/i3-signalis/blob/hyprland/port/README.ru.md).
+
 Неофициальное оформление рабочего стола Niri и Noctalia в духе SIGNALIS. В Penrose тёмно-зелёная палитра сочетается с красной рамкой фокуса, компактной верхней панелью и четырьмя именованными рабочими пространствами.
 
 ![Русский профиль с лаунчером Penrose](docs/desktop-ru.png)
